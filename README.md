@@ -2,11 +2,12 @@
 
 - survey url: <http://naver.me/FU35Hb4O>
 - survey data: `survey data.csv`
-
+- 설문 참여자: 총 75명
 
 ### data preperation and exploration
 - Code: `data preprocesing and exploration.ipynb`([here](https://github.com/ejklike/maskvendor/blob/main/data%20preprocessing%20and%20exploration.ipynb))
-- Decision Tree 학습하여 시각화해본 결과, `last_ordered_quantity = 0`이면 구매한다라는 규칙을 학습하고 있음 (첫 번째 노드).
+- `augmented_data.csv`: 구매자별로 일자별 입력변수값 및 구매여부를 augmentation한 데이터
+- Augmented data를 사용하여 decision Tree 학습하여 시각화해본 결과, `last_ordered_quantity = 0`이면 구매한다라는 규칙을 학습하고 있음 (첫 번째 노드).
 
 ![](dt.png)
 
